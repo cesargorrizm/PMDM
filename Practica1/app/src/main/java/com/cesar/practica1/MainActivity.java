@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,56 +15,53 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //1- Agregamos los ids a los elementos
-        EditText pripernum =findViewById(R.id.EdPrimerNum);
-        EditText segunnum = findViewById(R.id.EdSegundoNum);
-        EditText resultado = findViewById(R.id.Resultado);
+        EditText pripernum =findViewById(R.id.PrimerNum);
+        EditText segunnum = findViewById(R.id.SegundoNum);
+        TextView resultado = findViewById(R.id.Resultado);
         Button sumar = findViewById(R.id.btnSumar);
         Button restar= findViewById(R.id.btnRestar);
         Button multiplicar= findViewById(R.id.btnMultiplicar);
         Button dividir= findViewById(R.id.btnDividir);
         //programamos los botones
 
+        String primero = pripernum.getText().toString();
+        Double primernum =Double.parseDouble(primero);
+
+        String segundo = segunnum.getText().toString();
+        Double segundonum = Double.parseDouble(segundo);
 
         sumar.setOnClickListener(view -> {
             if (pripernum != null && segunnum!= null){
-                String primero = pripernum.getText().toString();
-                int primernum = Integer.parseInt(primero);
-                String segundo = segunnum.getText().toString();
-                int segundonum = Integer.parseInt(segundo);
-                int resul = primernum +segundonum;
-                resultado.setText(resul);
+
+                Double resul = primernum +segundonum;
+                String rstFinal = "El resultado es : "+ resul;
+                resultado.setText(rstFinal);
             }
 
 
         });
         restar.setOnClickListener(view -> {
             if (pripernum != null && segunnum != null) {
-                String primero = pripernum.getText().toString();
-                int primernum = Integer.parseInt(primero);
-                String segundo = segunnum.getText().toString();
-                int segundonum = Integer.parseInt(segundo);
-                int resul = primernum - segundonum;
-                resultado.setText(resul);
+
+                double resul = primernum - segundonum;
+                String rstFinal = "El resultado es : "+ resul;
+                resultado.setText(rstFinal);
             }
         });
         multiplicar.setOnClickListener(view -> {
             if (pripernum != null && segunnum != null) {
-                String primero = pripernum.getText().toString();
-                int primernum = Integer.parseInt(primero);
-                String segundo = segunnum.getText().toString();
-                int segundonum = Integer.parseInt(segundo);
-                int resul = primernum * segundonum;
-                resultado.setText(resul);
+
+                Double resul=primernum * segundonum;
+                String rstFinal = "El resultado es : "+ resul;
+                resultado.setText(rstFinal);
             }
         });
-        restar.setOnClickListener(view -> {
+        dividir.setOnClickListener(view -> {
             if (pripernum != null && segunnum != null) {
-                String primero = pripernum.getText().toString();
-                Double primernum =Double.parseDouble(primero);
-                String segundo = segunnum.getText().toString();
-                Double segundonum = Double.parseDouble(segundo);
-                Double result = primernum / segundonum;
-                resultado.setText(result.toString());
+
+                Double resul = primernum / segundonum;
+                String rstFinal = "El resultado es : "+ resul;
+                resultado.setText(rstFinal);
             }
         });
     }
