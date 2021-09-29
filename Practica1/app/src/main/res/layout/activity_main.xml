@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
 
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".MainActivity"
->
+    android:padding="6dp"
+    tools:ignore="MissingConstraints">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
     android:text="Introduzca el primer numero:"
     android:padding="16dp"
     android:textSize="20dp"
-    
+
     />
     <EditText
         android:id="@+id/EdPrimerNum"
@@ -81,6 +81,8 @@
     android:text="+"
     android:textSize="25dp"
 
+    android:layout_margin="6dp"
+
     />
     <Button
         android:id="@+id/btnRestar"
@@ -88,13 +90,17 @@
         android:layout_height="wrap_content"
         android:text="-"
         android:textSize="25dp"
+
+        android:layout_margin="6dp"
         />
     <Button
         android:id="@+id/btnMultiplicar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="X"
         android:textSize="25dp"
+        android:layout_margin="6dp"
         />
     <Button
         android:id="@+id/btnDividir"
@@ -102,6 +108,8 @@
         android:layout_height="wrap_content"
         android:text="/"
         android:textSize="25dp"
+
+        android:layout_margin="6dp"
         />
 
 </LinearLayout>
