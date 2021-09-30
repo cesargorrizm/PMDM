@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Practica1</string>
+    <string name="bienvenidos_a_mi_app_calculadora">Bienvenidos a mi APP Calculadora</string>
+    <string name="introduzca_el_primer_numero">Introduzca el primer numero:</string>
+    <string name="introduce_el_primer_numero">Introduce el primer numero</string>
+    <string name="introduzca_el_segundo_numero">Introduzca el segundo numero</string>
+    <string name="introduce_el_segundo_numero">Introduce el segundo numero</string>
+    <string name="el_resultado_es">El resultado es :</string>
+    <string name="resul">El resultado es : </string>
+    <string name="campoVacio">Campo vacio</string>
 </resources>

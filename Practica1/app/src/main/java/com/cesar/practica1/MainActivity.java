@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //1- Agregamos los ids a los elementos
-        EditText pripernum =findViewById(R.id.PrimerNum);
-        EditText segunnum = findViewById(R.id.SegundoNum);
+        EditText Primernum =findViewById(R.id.PrimerNum);
+        EditText Segunnum = findViewById(R.id.SegundoNum);
         TextView resultado = findViewById(R.id.Resultado);
         Button sumar = findViewById(R.id.btnSumar);
         Button restar= findViewById(R.id.btnRestar);
@@ -24,45 +25,66 @@ public class MainActivity extends AppCompatActivity {
         Button dividir= findViewById(R.id.btnDividir);
         //programamos los botones
 
-        String primero = pripernum.getText().toString();
-        Double primernum =Double.parseDouble(primero);
-
-        String segundo = segunnum.getText().toString();
-        Double segundonum = Double.parseDouble(segundo);
-
-        sumar.setOnClickListener(view -> {
-            if (pripernum != null && segunnum!= null){
-
-                Double resul = primernum +segundonum;
-                String rstFinal = "El resultado es : "+ resul;
-                resultado.setText(rstFinal);
-            }
 
 
-        });
+    sumar.setOnClickListener(view -> {
+        String primero = Primernum.getText().toString();
+        String segundo = Segunnum.getText().toString();
+        if (!primero.isEmpty() && !segundo.isEmpty() ) {
+
+            Double segundonum = Double.parseDouble(segundo);
+            Double primernum = Double.parseDouble(primero);
+            Double resul = primernum + segundonum;
+            String rstFinal = getString(R.string.resul) + " " + resul;
+            resultado.setText(rstFinal);
+        }else {Toast.makeText(this,
+                R.string.campoVacio,
+                Toast.LENGTH_SHORT).show();             }
+         });
+
         restar.setOnClickListener(view -> {
-            if (pripernum != null && segunnum != null) {
-
+            String primero = Primernum.getText().toString();
+            String segundo = Segunnum.getText().toString();
+            if (!primero.isEmpty() && !segundo.isEmpty() ) {
+            Double segundonum = Double.parseDouble(segundo);
+            Double primernum =Double.parseDouble(primero);
                 double resul = primernum - segundonum;
-                String rstFinal = "El resultado es : "+ resul;
+                String rstFinal = getString(R.string.resul)+ " "+resul;
                 resultado.setText(rstFinal);
-            }
+            }else {Toast.makeText(this,
+                    R.string.campoVacio,
+                    Toast.LENGTH_SHORT).show();             }
+
+
         });
         multiplicar.setOnClickListener(view -> {
-            if (pripernum != null && segunnum != null) {
-
+            String primero = Primernum.getText().toString();
+            String segundo = Segunnum.getText().toString();
+            if (!primero.isEmpty() && !segundo.isEmpty() ) {
+            Double segundonum = Double.parseDouble(segundo);
+            Double primernum =Double.parseDouble(primero);
                 Double resul=primernum * segundonum;
-                String rstFinal = "El resultado es : "+ resul;
+                String rstFinal = getString(R.string.resul)+ " "+resul;
                 resultado.setText(rstFinal);
-            }
-        });
-        dividir.setOnClickListener(view -> {
-            if (pripernum != null && segunnum != null) {
+            }else {Toast.makeText(this,
+                R.string.campoVacio,
+                Toast.LENGTH_SHORT).show();             }
+             });
 
+
+        dividir.setOnClickListener(view -> {
+            String primero = Primernum.getText().toString();
+            String segundo = Segunnum.getText().toString();
+            if (!primero.isEmpty() && !segundo.isEmpty() ) {
+            Double segundonum = Double.parseDouble(segundo);
+            Double primernum =Double.parseDouble(primero);
                 Double resul = primernum / segundonum;
-                String rstFinal = "El resultado es : "+ resul;
+                String rstFinal = getString(R.string.resul)+" "+ resul;
                 resultado.setText(rstFinal);
-            }
-        });
+            }else {Toast.makeText(this,
+                    R.string.campoVacio,
+                    Toast.LENGTH_SHORT).show();             }
+             });
+
     }
 }
