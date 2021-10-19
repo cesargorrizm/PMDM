@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
-        android:text="1/3"
+        android:text="@string/NumeroPregunta"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Resuelve el valor de X en esta ecuacion"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textSize="15dp"
@@ -35,7 +35,7 @@
         android:layout_width="409dp"
         android:layout_height="10dp"
         android:background="?android:attr/listDivider"
-        android:outlineAmbientShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/teal_700"
         app:layout_constraintBottom_toTopOf="@+id/RGRespuestas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="4X = 4 - (7 - X)"
+
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,14 +69,14 @@
             android:id="@+id/rbRespuesta1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="X = -1"
+
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/rbRespuesta2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="X = -2"
+
             android:textSize="20dp" />
     </RadioGroup>
 
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="VALIDAR"
+        android:text="@string/validar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
