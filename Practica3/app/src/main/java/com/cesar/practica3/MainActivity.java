@@ -17,7 +17,7 @@ public boolean bien;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //recogemos los elementos con su id
         setContentView(R.layout.activity_main);
         TextView numeroPreg = findViewById(R.id.tvNumPre);
         TextView pregunta = findViewById(R.id.tvPregunta);
@@ -25,8 +25,11 @@ public boolean bien;
         RadioButton primerares = findViewById(R.id.rbRespuesta1);
         RadioButton segundares= findViewById(R.id.rbRespuesta2);
         Button btnvalidar = findViewById(R.id.btnValidar);
-
+        //vamos al metodo para asignar los textos que tocan
         extracted(i,numeroPreg, pregunta, ecuacion, primerares, segundares);
+        //prgramamos el boton para que cuando se pulse compruebe si la respuesta es correcta
+        //O incorrecta, Si es correca sumamos una a i para pasar de pregunta y lo enviamos al otro Intent
+        //si no es correcta mantenemos la i y le pasamos una variable que sea falsa.
         btnvalidar.setOnClickListener(view -> {
             Intent irSecond = new Intent(this,SecondActivity.class);
 
