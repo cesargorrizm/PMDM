@@ -16,7 +16,10 @@ public boolean bien;
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        Intent irSecond = new Intent(this,SecondActivity.class);
+
         //recogemos los elementos con su id
         setContentView(R.layout.activity_main);
         TextView numeroPreg = findViewById(R.id.tvNumPre);
@@ -31,7 +34,7 @@ public boolean bien;
         //O incorrecta, Si es correca sumamos una a i para pasar de pregunta y lo enviamos al otro Intent
         //si no es correcta mantenemos la i y le pasamos una variable que sea falsa.
         btnvalidar.setOnClickListener(view -> {
-            Intent irSecond = new Intent(this,SecondActivity.class);
+
 
             if (i ==1){
                 if (primerares.isChecked()==true) {
