@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">6DashBoard</string>
+    <string name="bienvenidos_a_mi_app_calculadora">Bienvenidos a mi APP Calculadora</string>
+    <string name="introduzca_el_primer_numero">Introduzca el primer numero:</string>
+    <string name="introduce_el_primer_numero">Introduce el primer numero</string>
+    <string name="introduzca_el_segundo_numero">Introduzca el segundo numero</string>
+    <string name="introduce_el_segundo_numero">Introduce el segundo numero</string>
+    <string name="el_resultado_es">El resultado es :</string>
+    <string name="resul">El resultado es : </string>
+    <string name="campoVacio">Campo vacio</string>
+    <string name="Pregunta_ppal">¿Cuantos años tienes?</string>
+    <string name="introdu_edad">Introduce tu edad</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="TextoResultado">Si fureas perro, tu edad sería  %d años</string>
+    <string name="NumeroPregunta">/3</string>
+    <string name="Pregunta">Resuelve el valor de X en esta ecuacion</string>
+    <string name="Ecuacion1">4X = 4 - (7 - X)</string>
+    <string name="Res1de1">X = -1</string>
+    <string name="Res2de1">X = -2</string>
+    <string name="validar">VALIDAR</string>
+    <string name="Ecuacion2">6 + 5 x + 2 = 4 x - 2 + x</string>
+    <string name="Res1de2">X = 10</string>
+    <string name="Res2de2">X = -10</string>
+    <string name="Ecuacion3">5 - 2(1 - X) = 2X - 3</string>
+    <string name="Res1de3">X = - 6</string>
+    <string name="Res2de3">X = 4 </string>
+    <string name="Corrcta">Correcta!!!</string>
+    <string name="siguientePreg">Siguiente Pregunta</string>
+    <string name="Incorrecto">Incorrecto, Vuelve a intentarlo.</string>
+    <string name="btnVolveraIntentar">Vuelve a Intentarlo</string>
+    <string name="TetoFinal">Enhorabuena lo has conseguido</string>
+    <string name="btnVolveraEmpezar">Empezar de Nuevo</string>
 </resources>
