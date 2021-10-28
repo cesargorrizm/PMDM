@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">6DashBoard</string>
+    <string name="bienvenidos_a_mi_app_calculadora">Welcome to my Calculator APP</string>
+    <string name="introduzca_el_primer_numero">Enter the first number:</string>
+    <string name="introduce_el_primer_numero">Enter the first number</string>
+    <string name="introduzca_el_segundo_numero">Enter the second number</string>
+    <string name="introduce_el_segundo_numero">Enter the second number</string>
+    <string name="el_resultado_es">The result is :</string>
+    <string name="resul">The result is :</string>
+    <string name="campoVacio">Empty field</string>
+    <string name="Pregunta_ppal">How old are you?</string>
+    <string name="introdu_edad">Your Age</string>
+    <string name="btn_calcular">Calculate</string>
+    <string name="TextoResultado">If you were a dog, you would be  %d year old.</string>
+    <string name="NumeroPregunta">/3</string>
+    <string name="Pregunta">Solve for the value of X in this equation</string>
+    <string name="Ecuacion1">4X = 4 - (7 - X)</string>
+    <string name="Res1de1">X = -1</string>
+    <string name="Res2de1">X = -2</string>
+    <string name="validar">Validate</string>
+    <string name="Ecuacion2">6 + 5 x + 2 = 4 x - 2 + x</string>
+    <string name="Res1de2">X = 10</string>
+    <string name="Res2de2">X = -10</string>
+    <string name="Ecuacion3">5 - 2(1 - X) = 2X - 3</string>
+    <string name="Res1de3">X = - 6</string>
+    <string name="Res2de3">X = 4 </string>
+    <string name="Corrcta">Correct!!!</string>
+    <string name="siguientePreg">Next Question</string>
+    <string name="Incorrecto">Incorrect, please try again.</string>
+    <string name="btnVolveraIntentar">Try again</string>
+    <string name="TetoFinal">Congratulations you have made it</string>
+    <string name="btnVolveraEmpezar">New Start</string>
+    <string name="TitleLista_de_amigos">Friend List</string>
+    <string name="TitleEdad_canina">Dog age</string>
+    <string name="TitleQuizzes">Quizzes</string>
+    <string name="TitleMapas">Maps</string>
+    <string name="TitleRestaurantes">Restaurants</string>
+    <string name="TitleHerramientas">Settings</string>
+    <string name="Titlecalculadora">Calculator</string>
+    <string name="TitleGaleria">Galeri</string>
+</resources>
