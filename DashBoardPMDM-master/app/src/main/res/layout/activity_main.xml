@@ -54,7 +54,7 @@
                             android:layout_below="@id/imgView1"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
-                            android:text="Calculadora"
+                            android:text="@string/Titlecalculadora"
                             android:textSize="14sp" />
 
                     </RelativeLayout>
@@ -88,7 +88,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imgView2"
                             android:layout_centerHorizontal="true"
-                            android:text="Lista de Amigos"
+                            android:text="@string/TitleLista_de_amigos"
                             android:layout_marginTop="5dp"
                             android:textSize="14sp" />
 
@@ -133,7 +133,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imgView3"
                             android:layout_centerHorizontal="true"
-                            android:text="Edad Canina"
+                            android:text="@string/TitleEdad_canina"
                             android:layout_marginTop="5dp"
                             android:textSize="14sp" />
 
@@ -168,7 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imgView4"
                             android:layout_centerHorizontal="true"
-                            android:text="Quizzes"
+                            android:text="@string/TitleQuizzes"
                             android:layout_marginTop="5dp"
                             android:textSize="14sp" />
 
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imgView5"
                             android:layout_centerHorizontal="true"
-                            android:text="Galeria"
+                            android:text="@string/TitleGaleria"
                             android:layout_marginTop="5dp"
                             android:textSize="14sp" />
 
@@ -247,7 +247,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imgView6"
                             android:layout_centerHorizontal="true"
-                            android:text="Mapas"
+                            android:text="@string/TitleMapas"
                             android:layout_marginTop="5dp"
                             android:textSize="14sp" />
 
@@ -291,7 +291,7 @@
                             android:layout_below="@id/imgView7"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
-                            android:text="Restaurantes"
+                            android:text="@string/TitleRestaurantes"
                             android:textSize="14sp" />
 
                     </RelativeLayout>
@@ -326,7 +326,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imgView8"
                             android:layout_centerHorizontal="true"
-                            android:text="LHerramientas"
+                            android:text="@string/TitleHerramientas"
                             android:textSize="14sp" />
 
                     </RelativeLayout>

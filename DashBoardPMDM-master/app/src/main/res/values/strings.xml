@@ -30,4 +30,12 @@
     <string name="btnVolveraIntentar">Vuelve a Intentarlo</string>
     <string name="TetoFinal">Enhorabuena lo has conseguido</string>
     <string name="btnVolveraEmpezar">Empezar de Nuevo</string>
+    <string name="Titlecalculadora">Calculadora</string>
+    <string name="TitleLista_de_amigos">Lista de Amigos</string>
+    <string name="TitleEdad_canina">Edad Canina</string>
+    <string name="TitleQuizzes">Quizzes</string>
+    <string name="TitleGaleria">Galeria</string>
+    <string name="TitleMapas">Mapas</string>
+    <string name="TitleRestaurantes">Restaurantes</string>
+    <string name="TitleHerramientas">Herramientas</string>
 </resources>
