@@ -12,5 +12,17 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
+        </style>
+
+        <style name="Theme.Basquet" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="colorPrimary">@color/lime</item>
+        <item name="colorPrimaryDark">@color/lime_dark</item>
+        <item name="colorAccent">@color/lime</item>
+            <item name="colorPrimaryVariant">@color/lime</item>
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        </style>
 </resources>

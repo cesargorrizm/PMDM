@@ -4,15 +4,188 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/cancha">
 
     <TextView
+        android:id="@+id/tWLocal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="Local"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLocalRestar"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="84dp"
+        android:text="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLocalRes"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:layout_marginTop="124dp"
+        android:text="0"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tWLocal" />
+
+    <Button
+        android:id="@+id/btnMas1Local"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@+id/btnMas2Local"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tWLocal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMas2Local"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="64dp"
+        android:text="+2"
+        app:layout_constraintBottom_toTopOf="@+id/btnMas3Local"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMas1Local" />
+
+    <Button
+        android:id="@+id/btnMas3Local"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:text="+3"
+        app:layout_constraintBottom_toTopOf="@+id/btnRsulFinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMas2Local" />
+
+    <Button
+        android:id="@+id/btnRsulFinal"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
+        android:text=">"
+        app:layout_constraintBottom_toTopOf="@+id/btnMas3Vis"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnMas3Vis"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:text="+3"
+        app:layout_constraintBottom_creator="@+id/btnMas3Local"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRsulFinal" />
+
+    <Button
+        android:id="@+id/btnMas2Vis"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="62dp"
+        android:text="+2"
+        app:layout_constraintBottom_toTopOf="@+id/btnMas1Vis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMas3Vis" />
+
+    <Button
+        android:id="@+id/btnMas1Vis"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="15dp"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMas3Vis"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <TextView
+        android:id="@+id/tvPuntosVis"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="100dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocalRes"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnVisRestar"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="72dp"
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="Visitante"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPuntosVis"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRestablecerMarcador"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="160dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnVisRestar"
+        app:layout_constraintEnd_toStartOf="@+id/btnRsulFinal"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLocalRestar"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pelotabasket" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
