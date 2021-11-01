@@ -1,9 +1,12 @@
 package com.cesar.practica5;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +30,7 @@ private  int iVis = 0;
         Button btnSumarUnoVis = findViewById(R.id.btnMas1Vis);
         Button btnSumarDosVis = findViewById(R.id.btnMas2Vis);
         Button btnSumarTresVis= findViewById(R.id.btnMas3Vis);
-        Button btnRestablecer= findViewById(R.id.btnRestablecerMarcador);
+        ImageButton btnRestablecer= findViewById(R.id.btnRestablecerMarcador);
         Button btnResultadoFinal = findViewById(R.id.btnRsulFinal);
 
         btnRestarLocal.setOnClickListener(view -> {
@@ -89,6 +92,17 @@ private  int iVis = 0;
             PuntosVis.setText(a);
             Toast.makeText(this ,"Triplazo",Toast.LENGTH_SHORT).show();
         });
-
+        btnResultadoFinal.setOnClickListener(view -> {
+            Intent secondAc = new Intent(this,SecondActivity.class);
+            secondAc.putExtra("iVis",iVis);
+            secondAc.putExtra("iLocal",iLocal);
+            startActivity(secondAc);
+            iLocal=0;
+            String a = String.valueOf(iLocal);
+            iVis =0 ;
+            String aV= String.valueOf(iVis);
+            PuntosLocal.setText(a);
+            PuntosVis.setText(aV);
+        });
     }
 }
