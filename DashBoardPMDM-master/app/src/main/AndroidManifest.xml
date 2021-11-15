@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.cesar.a6dashboard">
-
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,12 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.6DashBoard">
         <activity
-            android:name=".activities.SecondActivity"
+            android:name=".DetailActivity"
             android:exported="true"
-            android:theme="@style/QuizzesTheme"/>
+            android:theme="@style/MusicaTheme"
+            />
+        <activity
+            android:name=".Musica_Activity"
+            android:exported="true"
+            android:theme="@style/MusicaTheme" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="true"
+            android:theme="@style/QuizzesTheme" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,41 +34,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.Settings_Activity"
+            android:name=".Settings_Activity"
             android:exported="true"
             android:theme="@style/SettingsTheme" />
         <activity
-            android:name=".activities.Mapas_Activity"
+            android:name=".Mapas_Activity"
             android:exported="true"
             android:theme="@style/MapasTheme" />
         <activity
-            android:name=".activities.Restaurantes_Activity"
+            android:name=".Restaurantes_Activity"
             android:exported="true"
             android:theme="@style/RestauranteTheme" />
         <activity
-            android:name=".activities.Galaria_Activity"
+            android:name=".Galaria_Activity"
             android:exported="true"
             android:theme="@style/GaleriaTheme" />
         <activity
-            android:name=".activities.Quizzes_Activity"
+            android:name=".Quizzes_Activity"
             android:exported="true"
             android:theme="@style/QuizzesTheme" />
         <activity
-            android:name=".activities.EdadCanina_Activity"
+            android:name=".EdadCanina_Activity"
             android:exported="true"
             android:theme="@style/PerreteTheme" />
         <activity
-            android:name=".activities.Amigos_Activity"
+            android:name=".Amigos_Activity"
             android:exported="true"
             android:theme="@style/AmigodThme" />
         <activity
-            android:name=".activities.Calculadora_Activity"
+            android:name=".Calculadora_Activity"
             android:exported="true"
             android:theme="@style/CalcularaTheme" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>
