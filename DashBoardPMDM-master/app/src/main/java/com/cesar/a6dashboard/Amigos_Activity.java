@@ -1,4 +1,4 @@
-package com.cesar.a6dashboard.activities;
+package com.cesar.a6dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
